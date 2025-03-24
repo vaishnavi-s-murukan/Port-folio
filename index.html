@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio-Vaishnavi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="#main" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Home</a>
+            <a href="#about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">About</a>
+            <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Skills</a>
+            <a href="#work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Work</a>
+            <a href="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contact</a>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="content">
+            <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">Hello, I'm <br><span>Vaishnavi S
+                    Murukan</span></h2>
+            <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                <h3>Full Stack Developer</h3>
+                <h3>Software Development</h3>
+                <h3>Programmer</h3>
+            </div>
+            <a href="#work" class="btn" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">See My Work</a>
+            <div class="media-icons">
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1200"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1300"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1400"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="#" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1500"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--  About Section -->
+
+    <section class="about" id="about">
+        <div class="title reveal">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">About me</h2>
+        </div>
+        <div class="content">
+            <div class="column col-left reveal">
+                <div class="img-card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+
+                </div>
+            </div>
+            <div class="column col-right reveal">
+                <h2 class="content-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Hey There!
+                    I am Vaishnavi S Murukan</h2>
+                <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">A Full-Stack
+                    Developer with expertise in MERN stack, cloud technologies, and ad tech solutions. I have a strong
+                    passion for building scalable web applications, optimizing system performance, and solving complex
+                    technical challenges.</p>
+                <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">With hands-on
+                    experience in software development, API integrations, and data analytics, I have developed projects
+                    like an Ad Analytics Dashboard, a Home Rental Platform, and an AI-powered chatbot. My technical
+                    stack includes JavaScript, TypeScript, React.js, Node.js, MongoDB, SQL, and Google Cloud, along with
+                    DevOps tools like Docker and CI/CD pipelines.</p>
+
+
+                <a href="#" class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="600"
+                    onclick="showMore(event)">See more</a>
+                <style>
+                    .hidden {
+                        display: none;
+                    }
+                </style>
+                <div id="moreContent" class="hidden">
+                    <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                        Previously, I worked as a Coordinator at Septa Milles, where I led a team of 30, managed a
+                        ticket-raising system, and worked closely with engineering and sales teams to drive operational
+                        efficiency. My ability to bridge the gap between technology and business needs allows me to
+                        deliver impactful solutions.</p>
+                    <p class="paragraph-text" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">I am
+                        always eager to explore new technologies, optimize processes, and collaborate with like-minded
+                        professionals. Feel free to check out my work and get in touch!</p>
+                </div>
+
+                <script>
+                    function showMore(event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+                        document.getElementById('moreContent').classList.toggle('hidden');
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">I have experience with these
+                technologies</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <p>React.js</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux">
+                    <p>Redux</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                        alt="Tailwind CSS">
+                    <p>Tailwind CSS</p>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                        alt="Express.js">
+                    <p>Express.js</p>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        alt="Firebase">
+                    <p>Firebase</p>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        alt="Docker">
+                    <p>Docker</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                        alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+                        alt="Vercel">
+                    <p>Vercel</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
+                        alt="Netlify">
+                    <p>Netlify</p>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                    <p>C</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++">
+                    <p>C++</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python">
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    </section>
+
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">My Work</h2>
+        </div>
+        <div class="content">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                    <a href="https://ad-analytics-dashboard-client.onrender.com" target="_blank">
+                        <img src="Image/work1.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                    <a href="https://dream-nestzz.netlify.app/" target="_blank">
+                        <img src="Image/work2.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                    <a href="https://ai-mern-gpt.web.app/" target="_blank">
+                        <img src="Image/work3.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card-img">
+                    <a href="https://vaishnavi-s-murukan.github.io/Admin-Dashboard/" target="_blank">
+                        <img src="Image/work4.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="title reveal">
+            <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Address</h3>
+                        <span>Thiruvanthapuram, Kerala, India</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <span>+91 6235223574</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Email Address</h3>
+                        <span>
+                            <a href="mailto:vaishnavismurukan@gmail.com">vaishnavismurukan@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Website</h3>
+                        <span>mywebsite.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-form reveal">
+                    <h3>Send Message</h3>
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <textarea id="message" rows="8" cols="80" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input-box">
+                        <button class="send-btn" onclick="sendEmail()">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function sendEmail() {
+                    const nameInput = document.getElementById("name");
+                    const emailInput = document.getElementById("email");
+                    const messageInput = document.getElementById("message");
+
+                    fetch("http://localhost:5000/send-email", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            name: nameInput.value,
+                            email: emailInput.value,
+                            message: messageInput.value,
+                        }),
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            alert(data.message);
+
+                            // Clear the form fields
+                            nameInput.value = "";
+                            emailInput.value = "";
+                            messageInput.value = "";
+
+                            // Delay the refresh slightly to ensure the fields clear
+                            setTimeout(() => {
+                                location.reload();
+                            }, 500);
+                        })
+                        .catch(error => console.error("Error:", error));
+                }
+
+
+            </script>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span class="footer-title">vaishnavi s murukan</span>
+        <p>Copyright @2025 <a href="#">portfolio</a>. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+
+        window.addEventListener("scroll", function () {
+            scrollBtn.classList.toggle("active", window.scrollY > 500);
+        });
+
+        //javascript for scroll back to top on click scroll-to-top button
+
+        // document.querySelector(".scrollToTop-btn").addEventListener("click", () => {
+        //   document.body.scrollTop = 0;
+        //   document.documentElement.scrollTop = 0;
+        // });
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        const navigationItems = document.querySelector(".navigation a");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+        // Navigation Effects
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        navigationItems.forEach((navigationItem) => {
+            navigationItem.addEventListener("click", () => {
+                menuBtn.classList.remove("active");
+                navigation.classList.remove("active")
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>
